@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  background-image: url(image/green.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.input-text,
+.input-date {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-date {
+  margin-bottom: 10px;
+}
+
+button.add-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+button.add-btn:hover {
+  background-color: #0056b3;
+}
+
+ul.todo {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+ul.todo li {
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+ul.todo li .task {
+  display: block;
+  font-weight: bold;
+}
+
+ul.todo li .date {
+  display: block;
+  margin-top: 5px;
+  color: #666;
+}
+
+ul.todo li .delete-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+ul.todo li .delete-btn:hover {
+  background: #c82333;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    width: 95%;
+    max-width: none;
+  }
+
+  button.add-btn {
+    width: 100%;
+  }
+
+  ul.todo li {
+    font-size: 14px;
+  }
+
+  ul.todo li .delete-btn {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .input-text,
+  .input-date {
+    padding: 8px;
+  }
+
+  button.add-btn {
+    font-size: 12px;
+  }
+
+  ul.todo li {
+    padding: 8px;
+  }
+
+  ul.todo li .delete-btn {
+    font-size: 12px;
+    padding: 3px 6px;
+  }
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.footer p {
+  margin: 0;
+}
